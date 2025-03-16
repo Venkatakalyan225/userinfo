@@ -1,50 +1,79 @@
-# Welcome to your Expo app 👋
+# User Information App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is a simple *React Native application* that fetches user data from a public API and displays it in a user-friendly interface. The app allows navigation between 80 users using *Next* and *Previous* buttons.
 
-## Get started
+## Features:
+- Fetches 80 users from the *Random Data API*.
+- Displays user details:
+  - *ID*
+  - *UID*
+  - *Password*
+  - *First Name*
+  - *Last Name*
+  - *Username*
+  - *Email*
+  - *Avatar (Profile Image)*
+- Navigation buttons to switch between users.
+- Handles API calls efficiently.
 
-1. Install dependencies
+## Technologies Used:
+- *React Native*
+- *React Navigation*
+- *Axios* (for API calls)
+- *React Native Paper* (for UI enhancements, optional)
 
-   ```bash
+## Installation:
+1. *Clone the Repository:*
+   bash
+   git clone <repository_url>
+   cd UserInfoApp
+   
+2. *Install Dependencies:*
+   bash
    npm install
-   ```
+   
+3. *Run the App:*
+   - *Android:*
+     bash
+     npx react-native run-android
+     
+   - *iOS (Mac users):*
+     bash
+     npx react-native run-ios
+     
+   - *Using Expo (if applicable):*
+     bash
+     npx expo start
+     
 
-2. Start the app
+## API Usage:
+- The app fetches data from *Random Data API*:
+  
+  https://random-data-api.com/api/users/random_user?size=80
+  
+- The size parameter specifies the number of users to fetch.
 
-   ```bash
-    npx expo start
-   ```
+## Project Structure:
 
-In the output, you'll find options to open the app in a
+UserInfoApp/
+│── screens/
+│   ├── UserScreen.js  # Main screen displaying user info
+│── App.js             # Navigation setup
+│── package.json       # Project dependencies
+│── README.md          # Project documentation
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Enhancements:
+- Added *loading indicators* while fetching data.
+- Implemented *error handling* for failed API requests.
+- Designed UI with *React Native Paper* for better aesthetics.
 
-## Get a fresh project
+## Submission:
+- Submit the *GitHub repository link* with this project.
 
-When you're ready, run:
+## Author:
+Suggu Venkata Kalyan
 
-```bash
-npm run reset-project
-```
+---
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This markdown provides a clean and structured description of your React Native project. 🚀 Let me know if you need any modifications! 😊
